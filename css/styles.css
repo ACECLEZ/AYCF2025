@@ -1,0 +1,456 @@
+body {
+    height: 100%;
+    width:100%;
+    margin: 0px;
+    padding: 0px 1vw;
+    background-color: white;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.hoverable {
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hoverable-card {
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.hoverable-card:hover {
+    transform: scale(1.03);
+    background-color: transparent;
+    box-shadow: 0px 8px 10px 4px rgba(0,0,0,0.2);
+    border: 3px solid black;
+    color: black;
+}
+
+.hoverable:hover {
+    color:#d3364a;
+}
+
+.headerText {
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    font-size: 5vw;
+    margin: 0px;
+}
+
+.bodyText {
+    font-family: "ZCOOL XiaoWei", sans-serif;
+    font-size: 1.6vw;
+    margin: 0px;
+}
+
+.section {
+    height:90vh;
+    padding: 1.5vh;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.h-font {
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+}
+
+.b-font {
+    font-family: "ZCOOL XiaoWei", sans-serif;
+}
+
+.bg-card {
+    box-sizing: border-box;
+    border-radius: 64px;
+    border-color: #000000;
+    border-style: solid;
+    border-width: 8px;
+    margin: 2vw 0vw;
+    height: 95vh;
+    grid-column: 1/13;
+    padding: 5vw 5vw;
+}
+
+.s-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    box-sizing: border-box;
+    border-radius: 24px;
+    border-width: 2px;
+    padding: 1vw 2vw;
+}
+
+
+
+.s-card span {
+    font-family: "ZCOOL QingKe HuangYou", sans-serif;
+    margin: 0px;
+}
+
+/* hero section */
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 25vh 5vh 15vh 10vh 20vh;
+    gap: 1vw;
+    padding: 0px;
+    margin: 24px;
+    height: 90vh;
+}
+
+
+.heroLogo-wrapper {
+    grid-column: 3/4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroLogo {
+    height: 100%;
+}
+
+.hero-link-1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: #2daae0;
+    border-color: #2daae0;
+    color: white;
+}
+
+.hero-link-2 {
+    grid-column: 1/2;
+    grid-row: 2/6;
+    background-color: #d3364a;
+    color: white;
+    border-color: #d3364a;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    .guest-wrapper {
+        display: flex;
+        height: 5vh;
+        align-items: center;
+        gap: 0.5vw;
+    }
+}
+
+.guest-img-wrapper {
+    height: 5vh;
+    width: 5vh;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1000px;
+    border: 2px solid black;
+}
+
+.hero-link-2 .guest-wrapper:nth-child(2) .guest-img-wrapper{
+    background-image: url("../images/林少芬.jpeg");
+}
+
+.hero-link-2 .guest-wrapper:nth-child(3) .guest-img-wrapper{
+    background-image: url("../images/嘉宾1.jpeg");
+}
+
+.hero-link-2 .guest-wrapper:nth-child(4) .guest-img-wrapper{
+    background-image: url("../images/WhatsApp-Image-2024-07-01-at-1.55.13-PM.jpeg");
+    background-position: right ;
+    background-size: 200%;
+    background-repeat: no-repeat;
+}
+
+.hero-link-2 .guest-wrapper:nth-child(5) .guest-img-wrapper{
+    background-image: url("../images/WhatsApp-Image-2024-06-28-at-11.14.25-AM.jpeg");
+}
+
+.hero-link-3 {
+    grid-column: 2/3;
+    grid-row: 3/5;
+    background-color: #f4ed35;
+    border-color: #f4ed35;
+    color: #000000;
+}
+
+.hero-link-4 {
+    grid-column: 2/3;
+    grid-row: 5/6;
+    align-items: center;
+    justify-content: center;
+    background-color: #d3364a;
+    border-color: #d3364a;
+    color: white;
+}
+
+.hero-link-4 .hci-hero-header {
+    text-align: justify;
+    font-size: 3.2vw;
+}
+
+.hero-link-5 {
+    grid-column: 3/4;
+    grid-row: 4/6;
+    background-color: #d3364a;
+    border-color: #d3364a;
+    color: white;   
+}
+
+.hero-link-5 span:nth-child(1) {
+    font-size: 2vw;
+}
+
+.hero-link-5 span:nth-child(2) {
+    font-size: 12vw; font-family: 'League Spartan'; font-weight: 700; margin-right: -0.5vw;margin-bottom: -3vw;
+}
+
+.hero-link-5 button {
+    display: none;
+}
+
+
+.hero-link-6 {
+    grid-column: 4/5;
+    grid-row: 3/5;
+    background-color: #2daae0;
+    border-color: #2daae0;
+    color: white;   
+}
+
+.hero-link-7 {
+    grid-column: 4/6;
+    grid-row: 5/6;
+    background-color: #f4ed35;
+    color: #000000;
+    border-color: #f4ed35;
+}
+
+.soundbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+  
+    span {
+        width: 0.5vw;
+        height: 100%;
+        background-color: black;
+        border-radius: 3px;
+        content: '';
+    }
+
+}
+.hero-link-7:hover {
+    .soundbar span {
+        animation: bounce 2.2s ease infinite alternate;
+        &:nth-of-type(2n+0) {
+            animation-delay: -2.2s; /* Start at the end of animation */
+        }
+        
+        &:nth-of-type(3n+0) {
+            animation-delay: -3.7s; /* Start mid-way of return of animation */
+        }
+    }
+}
+
+@keyframes bounce {
+    10% {
+      transform: scaleY(0.3); /* start by scaling to 30% */
+    }
+  
+    30% {
+      transform: scaleY(1); /* scale up to 100% */
+    }
+  
+    60% {
+      transform: scaleY(0.5); /* scale down to 50% */
+    }
+  
+    80% {
+      transform: scaleY(0.75); /* scale up to 75% */
+    }
+  
+    100% {
+      transform: scaleY(0.6); /* scale down to 60% */
+    }
+}
+
+
+.hero-link-8 {
+    grid-column: 5/6;
+    grid-row: 1/5;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    background-color: #d3364a;
+    color: white;
+    border-color: #d3364a;
+}
+.hero-link-8 .hudie-header {
+    font-size: 6.5vw;
+}
+
+.butterfly-logo-hero {
+    position: absolute;
+    margin-bottom: 0vh;
+    width: 20vw;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.hero-link-8:hover .butterfly-logo-hero {
+    margin-bottom: 15vh;
+    opacity: 1;
+}
+
+.hero-link-9 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    align-items: center;
+}
+
+
+/* countdown */
+ .countdown {
+    border-radius: 64px;
+    background-image: url("../assets/CountdownBg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    grid-template-rows: auto 1fr;
+    background-color: #d3364a;
+    padding-top: 5vw;
+}
+
+.countdown-header {
+    grid-column: 5/9;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    height: fit-content;
+    margin: 2vw 0vw 4vw 0vw;
+}
+
+.countdown-header > :nth-child(1) {
+    align-self: flex-start;
+    font-size: 1.6vw;
+    color: #dbd5d5;
+}
+
+.countdown-header > :nth-child(2) {
+    align-self: center;
+    width: 100%;
+}
+
+.countdown-header > :nth-child(3) {
+    align-self: flex-end;
+    font-size: 2vw;
+    color: #dbd5d5;
+}
+
+.countdown-clock {
+    grid-column: 5/9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw
+}
+
+.daybox {
+    border-color: #dbd5d5;
+    border-width: 16px;
+    border-radius: 64px;
+    border-style: solid;
+    background-color: #d3364a;
+    display: flex;
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw 0.5vw;
+}
+
+.daybox > span {
+    font-size: 15vw;
+    color: white;
+}
+
+.timebox-wrapper {
+    display: flex;
+    gap: 3vw;
+}
+
+.timebox {
+    font-size: 3.5vw;
+    gap: 1vw;
+    color: white;
+}
+
+@media only screen and (max-width: 1000px){
+    .hero {
+        margin: 0.5vw;
+        display: flex;
+        flex-direction: column;
+        width: 97vw;
+        height: 70%;
+        margin-bottom: 1vh;
+    }
+    .heroLogo{
+        grid-row: 1/6;
+        width: 90vw;
+        height: auto;
+        margin: 5vh 0;
+    }
+    .hero-link-5 span:nth-child(1) {
+        font-size: 3vh;
+        margin-right: 1vw;
+    }
+    
+    .hero-link-5 span:nth-child(2) {
+        font-size: 18vh; font-family: 'League Spartan'; font-weight: 700; margin-right: -0.5vw;margin-bottom: -3vw;
+    }
+
+    .hero-link-5 button {
+        font-family: "ZCOOL QingKe HuangYou", sans-serif;
+        display: inline-block;
+        color: #d3364a;
+        background-color: white;
+        text-align: center;
+        border-radius: 24px;
+        padding: 1vh;
+        font-size: 3vh;
+        margin-right: 1vw;
+        border: 0;
+    }
+    
+    .s-card {
+        display: none;
+    }
+    .countdown {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10vw;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 1fr;
+        border-radius: 40px;
+        background-image: none;
+        height: auto;
+        .countdown-clock{
+            .daybox {
+                border: 0;
+                #countdown-day {
+                    font-size: 40vw;
+                }
+            }
+        }
+        .timebox-wrapper {
+            width: 50vw;
+            justify-content: space-between;
+        }
+        #countdown-hour,#countdown-minute {
+            font-size: 8vw;
+        }
+        .countdown-header {
+            grid-column: 6/8;
+        }
+    }
+    
+}
